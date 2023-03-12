@@ -1,0 +1,29 @@
+#headerArea{
+    width: 1200px;
+    margin: 0 auto;
+}
+.sub{
+    float: right;
+}
+.sub > li{
+    margin-right: 10px;
+}
+.sub > li > a{
+    font-size: 11px;
+}
+.logo-area{
+    margin: 0 auto 40px;
+    width:400px;
+    height:100px;
+}
+.header-link{
+    width: 520px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 50px;
+    border-top: 1px solid #dedede;
+}
+.header-link > ul > li > a:hover{
+    color:darkorange;
+}

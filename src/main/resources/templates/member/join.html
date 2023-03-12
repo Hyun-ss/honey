@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <th:block th:insert="~{layout/header :: Head}" />
+    <link rel="stylesheet" href="/css/member/join.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <th:block th:insert="~{layout/header :: Header}"></th:block>
+    <div id="join">
+        <div class="wrap-join">
+            <form action="/member/signup" method="post">
+                <ul>
+                    <li>
+                        <input type="text" name="email" placeholder="이메일을 입력하세요">
+                    </li>
+                    <li>
+                        <input type="password" name="password" placeholder="비밀번호를 입력하세요">
+                    </li>
+                    <li>
+                        <input type="text" name="name" placeholder="이름을 입력하세요">
+                    </li>
+                    <li>
+                        <input type="text" name="nickName" placeholder="닉네임을 입력하세요">
+                    </li>
+                    <li>
+                        <input type="text" name="phone" placeholder="전화번호를 입력하세요">
+                    </li>
+                    <li>
+                        <button>회원가입</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
